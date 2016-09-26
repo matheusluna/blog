@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Café com gerência</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7-dist/css/estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Café com gerência</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Controle de versão <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="git.html">Git</a></li>
+                <li><a href="mercurial.html">Mercurial</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gerenciamento de mudanças <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="bugzilla.html">Bugzilla</a></li>
+                <li><a href="trac.html">Trac</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Integração contínua <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="maven.html">Maven</a></li>
+                <li><a href="cctray.html">CCTray</a></li>
+              </ul>
+            </li>
+            <li><a href="equipe.html">Equipe</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <h1>Maven</h1>
+      <h6><b>Publicado por David no dia 25/09/2016 as 20:54 horas.</b></h6>
+      <hr>
+      <p>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O Maven é uma ferramenta de construção que gerencia as dependências do seu projeto. Encarregado de testar e compilar,
+		gerar documentação, códigos-fonte, entre outros e assim automatizar o processo de construção, fazendo com que os riscos sejam minimizados em comparação ao que seria no caso
+		de seres humanos construissem manualmente.
+		</br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seguindo os princípios da Integração contínua, o Maven busca facilitar o trabalho e a realização de mudanças, além de fazer testes a cada commit,
+        logo, buscando e informando possíveis erros aos desenvolvedores. Conforme os erros vão sendo encontrados, a correção dos mesmos é realizada mais rápida, evitando assim que os
+        problemas se tornem maiores.
+        </br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No geral, o Maven é encarregado de:
+        <ul>
+			<li>Facilitar a compilação do código, o empacotamento, a execução de testes unitários;</li>
+			<li>Unificar e automatizar o processo de geração do sistema. Nada mais de uma coleção de passos e scrips a serem executados manualmente;</li>
+			<li>Centralizar informações organizadas do projeto, incluindo suas dependências, resualtados de testes, documentação, etc.;</li>
+			<li>Reforçar boas práticas de desenvolvimento, tais como: separação de classes de teste as classes do sistema, uso de convençoẽs de nomes e diretórios, etc.;</li>
+			<li>Ajudar no controle de versões geradas (<i>releases</i>) dos seus projetos.</li>
+		</ul>        
+      </p>
+    <h2>Instalação do Maven</h2>
+    <p>
+		<center><b>Linux:</b></center>
+		O Maven pode ser instalado no Linux através dos seguintes comandos: <pre>sudo apt-get install update</br>sudo apt-get isntall maven</pre>
+		<center><b>Windows:</b></center>
+		A instalação para Windows é um pouco mais trabalhosa, faça o download da versão binária desejada no site oficial do Maven:<pre>http://maven.apache.org/download.cgi</pre>
+		Extraia os arquivos para uma pasta com um nome amigável, logo em seguida, adicione as variáveis de ambiente no Windows o caminho do Maven (C:\nome da pasta amigável\apache-maven-3.x.x\).
+		<center><b>Mac:</b></center>
+		No Mac, como no Windows faça o download no mesmo link, mas ao invés da versão binária (.bin), baixe a versão tar.gz. Logo em seguida adicione o caminho à variável de ambiente com
+		o seguinte código: <pre>export PATH=/opt/apache-maven-3.3.9/bin:$PATH</pre>
+		A documentação do Maven se encontra no seguinte link: <pre>http://maven.apache.org/guides/</pre>
+    </p>
+    </div>
+    <hr>
+    <footer>
+       <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
