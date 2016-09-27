@@ -8,10 +8,10 @@ Basta iniciar o index.html usando um navegador qualquer ou abrir diretamente atr
 
 ## Ferramenta(s) de desenvolvimento
 
-*Bootstrapper -> desenvolvimento do layout
-*Geany e Atom -> edição dos arquivos html e inserção das publicações
+* Bootstrapper -> desenvolvimento do layout
+* Geany e Atom -> edição dos arquivos html e inserção das publicações
 
 ## Autores
 
-*José David Emanoell Feitoza Braga
-*Matheus Moreira Luna
+* José David Emanoell Feitoza Braga
+* Matheus Moreira Luna
